@@ -47,8 +47,8 @@ if __name__ == "__main__":
                     resolution=16,
                     output=outputfile, remove_ventricles=True)
 
-    os.system("meshio-convert " + outputfile + " " + outputfile.replace(".mesh", ".xml"))
-    os.system("meshio-convert " + outputfile + " " + outputfile.replace(".mesh", ".xdmf"))
+    os.system("meshio convert " + outputfile + " " + outputfile.replace(".mesh", ".xml"))
+    os.system("meshio convert " + outputfile + " " + outputfile.replace(".mesh", ".xdmf"))
 
 
     try:
@@ -61,8 +61,8 @@ if __name__ == "__main__":
 
         File(boundarymeshfile) << meshboundary
 
-        os.system("meshio-convert " + boundarymeshfile + " " + boundarymeshfile.replace(".xml", ".xdmf"))
-        os.system("meshio-convert " + boundarymeshfile + " " + boundarymeshfile.replace(".xml", ".stl"))
+        os.system("meshio convert " + boundarymeshfile + " " + boundarymeshfile.replace(".xml", ".xdmf"))
+        os.system("meshio convert " + boundarymeshfile + " " + boundarymeshfile.replace(".xml", ".stl"))
 
 
 
