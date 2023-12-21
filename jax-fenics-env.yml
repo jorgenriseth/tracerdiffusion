@@ -12,8 +12,6 @@ dependencies:
   - h5py
   - scikit-image
   - nibabel
-  - svmtk <= 1.3 # Not sure if this is still needed, but I have previously had issues with newer version of svmtk-conda,
-  - meshio
   - tqdm
   - parse
   - optax
